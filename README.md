@@ -1,5 +1,5 @@
 # PythonQRplayground V1.0
-Simplistic QR code generator made in python using the *qrcode* python module.
+Simplistic QR code generator made in python using the *qrcode* module.
 
 ## Dependencies
 Running the source code requires two modules:
