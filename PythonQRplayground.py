@@ -1,4 +1,5 @@
 import qrcode
+from pathlib import Path
 
 def create_qr():
     img = qrcode.make(text_input)
@@ -11,7 +12,7 @@ while True:
     rickroll_question = input('Custom Message (y), Or Rickroll QR Code? (n)\n')
     if rickroll_question == 'n':
         text_input = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-        path_input = 'C:\\Users\\Space\\Downloads\\'
+        path_input = str(Path.home() / "Downloads")
         path_input += 'Rickroll'
         path_input += '.png'
         create_qr()
@@ -20,7 +21,7 @@ while True:
         path_input_question = input('Save To Downloads (y) or Custom Path? (n)\n')
 
         if path_input_question == 'y':
-            path_input = 'C:\\Users\\Space\\Downloads\\'
+            path_input = str(Path.home() / "Downloads")
             path_input += text_input
             path_input += '.png'
         elif path_input_question == 'n':
@@ -28,6 +29,7 @@ while True:
             path_input += text_input
             path_input += '.png'
         create_qr()
+
 
 
 
