@@ -8,7 +8,7 @@ def create_qr():
     print('Data Containted: ', text_input, '\n')
 
 while True:
-    rickroll_question = input('Generation options\nCustom Message (c)\nRickroll QR Code (r)?\n>')
+    rickroll_question = input('Generation options\n(C)ustom Message\n(R)ickroll QR Code\n>')
     if rickroll_question.lower() == 'r':
         text_input = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
         path_input = 'C:\\Users\\Space\\Downloads\\'
