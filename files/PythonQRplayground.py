@@ -8,14 +8,14 @@ def create_qr():
     print('Data Containted: ', text_input, '\n')
 
 while True:
-    rickroll_question = input('Custom Message (y), Or Rickroll QR Code? (n)\n')
-    if rickroll_question == 'n':
+    rickroll_question = input('Generation options\nCustom Message (c)\nRickroll QR Code (r)?\n>')
+    if rickroll_question.lower() == 'r':
         text_input = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
         path_input = 'C:\\Users\\Space\\Downloads\\'
         path_input += 'Rickroll'
         path_input += '.png'
         create_qr()
-    elif rickroll_question == 'y':
+    elif rickroll_question.lower() == 'c':
         text_input = input('Enter Plain Text or Link You Want To Encode\n')
         path_input_question = input('Save To Downloads (y) or Custom Path? (n)\n')
 
